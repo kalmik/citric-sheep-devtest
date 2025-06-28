@@ -1,0 +1,20 @@
+[project]
+name = "nextlevel-elevator"
+version = "0.1.0"
+description = "A basic FastAPI project for NextLevel Elevator."
+dependencies = [
+    "fastapi==0.115.14", 
+    "pydantic==2.11.7", 
+    "sqlmodel==0.0.24", 
+    "uvicorn==0.34.3",
+    "httpx==0.28.1"
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest<8.0.0,>=7.4.3"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta" 
